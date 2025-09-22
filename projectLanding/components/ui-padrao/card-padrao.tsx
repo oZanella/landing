@@ -1,4 +1,8 @@
-import React, { ElementType, HTMLAttributes, ReactNode } from 'react';
+"use client"
+
+import React, { ElementType, HTMLAttributes, ReactNode, useState } from 'react';
+import { Button } from "@/components/ui/button";
+import { Plus } from 'lucide-react';
 
 // Utility function para combinar classes
 const cn = (...classes: string[]) => classes.filter(Boolean).join(' ');
@@ -133,14 +137,14 @@ export const CardHeader = React.forwardRef<HTMLDivElement, CardHeaderProps>(
     const paddingClasses = {
       none: '',
       sm: 'p-4 pb-2',
-      default: 'p-6 pb-2',
+      default: 'p-4',
       lg: 'p-8 pb-4'
     };
 
     return (
       <div
         ref={ref}
-        className={cn('flex flex-col space-y-1.5', paddingClasses[padding], className)}
+        className={cn('flex flex-col md:flex-row justify-between', paddingClasses[padding], className)}
         {...props}
       >
         {children}
@@ -161,7 +165,7 @@ export const CardTitle = React.forwardRef<HTMLElement, CardTitleProps>(
     return (
       <Component
         ref={ref}
-        className={cn('leading-none tracking-tight', sizeClasses[size], className)}
+        className={cn('leading-none tracking-tight flex items-center', sizeClasses[size], className)}
         {...props}
       >
         {children}
@@ -190,17 +194,44 @@ export const CardDescription = React.forwardRef<HTMLParagraphElement, CardDescri
   }
 );
 
-export function CardAction({ className, ...props }: React.ComponentProps<"div">) {
+interface CardActionProps extends React.ComponentProps<"div"> {
+  children: React.ReactNode[];
+}
+
+export function CardAction({ className, children, ...props }: CardActionProps) {
+  const maxVisible = 3;
+  const visibleChildren = children.slice(0, maxVisible);
+  const hiddenChildren = children.slice(maxVisible);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   return (
     <div
       data-slot="card-action"
       className={cn(
-        "col-start-2 row-span-2 row-start-1 self-start justify-self-end",
+        "flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center",
         className ?? ''
       )}
       {...props}
-    />
-  )
+    >
+      {visibleChildren}
+
+      {/* {hiddenChildren.length > 0 && (
+        <div className="relative">
+          <Button
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+            className="h-7 w-7"
+          >
+            <Plus />
+          </Button>
+          {dropdownOpen && (
+            <div className="absolute right-0 mt-2 bg-white border rounded shadow-lg z-10 flex flex-col gap-2 p-2">
+              {hiddenChildren}
+            </div>
+          )}
+        </div>
+      )} */}
+    </div>
+  );
 }
 
 export const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(
