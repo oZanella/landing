@@ -1,7 +1,7 @@
 import PageContainer from "../page-container/page-container";
-import Body from "./Body/page";
-import Footer from "./Footer/page";
-import Header from "./Header/page";
+import Body from "./body";
+import Footer from "./footer";
+import Header from "./header";
 
 export default function HomePage() {
     return (
