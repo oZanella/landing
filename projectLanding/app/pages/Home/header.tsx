@@ -6,9 +6,14 @@ export default function Header() {
     return (
         <CardPadrao>
             <CardHeader>
-                <CardTitle>
-                    Windel Sistemas LTDA
-                </CardTitle>
+                <div className="w-full flex flex-col items-center lg:items-start">
+                    <CardTitle>
+                        Windel Sistemas LTDA
+                    </CardTitle>
+                    <CardDescription>
+                        Descrição do projeto sobre Card da Windel Sistemas
+                    </CardDescription>
+                </div>
                 <CardAction>
                     <Button>
                         Blog
@@ -25,6 +30,7 @@ export default function Header() {
                     <Button>
                         sobre
                     </Button>
+
                 </CardAction>
             </CardHeader>
 

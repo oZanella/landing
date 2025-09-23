@@ -144,7 +144,10 @@ export const CardHeader = React.forwardRef<HTMLDivElement, CardHeaderProps>(
     return (
       <div
         ref={ref}
-        className={cn('flex flex-col md:flex-row justify-between', paddingClasses[padding], className)}
+        className={cn(
+          'flex flex-col items-center justify-center lg:flex-row',
+          paddingClasses[padding], className
+        )}
         {...props}
       >
         {children}
@@ -185,7 +188,7 @@ export const CardDescription = React.forwardRef<HTMLParagraphElement, CardDescri
     return (
       <p
         ref={ref}
-        className={cn('text-gray-600', sizeClasses[size], className)}
+        className={cn('text-gray-600 ', sizeClasses[size], className)}
         {...props}
       >
         {children}
@@ -201,14 +204,12 @@ interface CardActionProps extends React.ComponentProps<"div"> {
 export function CardAction({ className, children, ...props }: CardActionProps) {
   const maxVisible = 3;
   const visibleChildren = children.slice(0, maxVisible);
-  const hiddenChildren = children.slice(maxVisible);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
     <div
       data-slot="card-action"
       className={cn(
-        "flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center",
+        'flex flex-row gap-4 mt-2 items-center',
         className ?? ''
       )}
       {...props}
