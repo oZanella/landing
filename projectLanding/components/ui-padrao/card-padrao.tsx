@@ -122,7 +122,7 @@ export const CardPadrao = React.forwardRef<HTMLDivElement, CardProps>(({
         hoverClasses,
         clickableClasses,
         className,
-        "bg-white text-gray-900 dark:bg-neutral-900 dark:text-green-600"
+        "bg-white text-black dark:bg-neutral-900 dark:text-white "
       )}
       onClick={onClick}
       {...props}
@@ -146,7 +146,7 @@ export const CardHeader = React.forwardRef<HTMLDivElement, CardHeaderProps>(
       <div
         ref={ref}
         className={cn(
-          'flex flex-col items-center justify-center lg:flex-row',
+          'flex flex-row items-center justify-center lg:flex-row',
           paddingClasses[padding], className
         )}
         {...props}
@@ -169,7 +169,7 @@ export const CardTitle = React.forwardRef<HTMLElement, CardTitleProps>(
     return (
       <Component
         ref={ref}
-        className={cn('leading-none tracking-tight flex items-center dark:text-white', sizeClasses[size], className)}
+        className={cn('leading-none tracking-tight flex items-center', sizeClasses[size], className)}
         {...props}
       >
         {children}
@@ -189,7 +189,7 @@ export const CardDescription = React.forwardRef<HTMLParagraphElement, CardDescri
     return (
       <p
         ref={ref}
-        className={cn('text-gray-600 dark:text-white', sizeClasses[size], className)}
+        className={cn('text-gray-600 dark:text-gray-300', sizeClasses[size], className)}
         {...props}
       >
         {children}
@@ -213,7 +213,7 @@ export function CardAction({ className, children, ...props }: CardActionProps) {
     <div
       data-slot="card-action"
       className={cn(
-        'flex flex-row gap-1 mt-2 lg:mt-0 items-center',
+        'flex flex-row gap-1 mt-0 items-center',
         className ?? ''
       )}
       {...props}
@@ -251,7 +251,7 @@ export const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(
     return (
       <div
         ref={ref}
-        className={cn(paddingClasses[padding], className)}
+        className={cn('flex flex-row justify-start', paddingClasses[padding], className)}
         {...props}
       >
         {children}
