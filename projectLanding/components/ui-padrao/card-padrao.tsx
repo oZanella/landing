@@ -244,14 +244,14 @@ export const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(
     const paddingClasses = {
       none: '',
       sm: 'p-4 pt-0',
-      default: 'p-6 pt-0',
+      default: 'p-4 pt-0',
       lg: 'p-8 pt-0'
     };
 
     return (
       <div
         ref={ref}
-        className={cn('flex flex-row justify-start', paddingClasses[padding], className)}
+        className={cn('flex flex-row justify-between', paddingClasses[padding], className)}
         {...props}
       >
         {children}
