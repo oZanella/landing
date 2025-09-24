@@ -49,7 +49,7 @@ function Button({
   return (
     <Comp
       data-slot="button"
-      className={cn("cursor-pointer !h-7", variant = "link", buttonVariants({ variant, size, className }))}
+      className={cn("cursor-pointer !h-7 dark:text-white", variant = "link", buttonVariants({ variant, size, className }))}
       {...props}
     />
   )

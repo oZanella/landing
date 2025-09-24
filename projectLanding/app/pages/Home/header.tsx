@@ -1,5 +1,6 @@
 import { CardPadrao, CardHeader, CardDescription, CardTitle, CardFooter, CardAction, CardContent } from "@/components/ui-padrao/card-padrao";
 import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/ui/themes-toggle";
 
 
 export default function Header() {
@@ -24,13 +25,7 @@ export default function Header() {
                     <Button>
                         Photos
                     </Button>
-                    <Button>
-                        sobre
-                    </Button>
-                    <Button>
-                        sobre
-                    </Button>
-
+                    <ModeToggle />
                 </CardAction>
             </CardHeader>
 

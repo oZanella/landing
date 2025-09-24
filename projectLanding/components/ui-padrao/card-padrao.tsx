@@ -121,7 +121,8 @@ export const CardPadrao = React.forwardRef<HTMLDivElement, CardProps>(({
         shadowClasses,
         hoverClasses,
         clickableClasses,
-        className
+        className,
+        "bg-white text-gray-900 dark:bg-neutral-900 dark:text-green-600"
       )}
       onClick={onClick}
       {...props}
@@ -168,7 +169,7 @@ export const CardTitle = React.forwardRef<HTMLElement, CardTitleProps>(
     return (
       <Component
         ref={ref}
-        className={cn('leading-none tracking-tight flex items-center', sizeClasses[size], className)}
+        className={cn('leading-none tracking-tight flex items-center dark:text-white', sizeClasses[size], className)}
         {...props}
       >
         {children}
@@ -188,7 +189,7 @@ export const CardDescription = React.forwardRef<HTMLParagraphElement, CardDescri
     return (
       <p
         ref={ref}
-        className={cn('text-gray-600 ', sizeClasses[size], className)}
+        className={cn('text-gray-600 dark:text-white', sizeClasses[size], className)}
         {...props}
       >
         {children}
@@ -202,21 +203,24 @@ interface CardActionProps extends React.ComponentProps<"div"> {
 }
 
 export function CardAction({ className, children, ...props }: CardActionProps) {
-  const maxVisible = 3;
+  const [dropdownOpen, setDropdownOpen] = useState(false)
+  const maxVisible = 4;
   const visibleChildren = children.slice(0, maxVisible);
+  const childArray = React.Children.toArray(children)
+  const hiddenChildren = childArray.slice(maxVisible)
 
   return (
     <div
       data-slot="card-action"
       className={cn(
-        'flex flex-row gap-4 mt-2 items-center',
+        'flex flex-row gap-1 mt-2 lg:mt-0 items-center',
         className ?? ''
       )}
       {...props}
     >
       {visibleChildren}
 
-      {/* {hiddenChildren.length > 0 && (
+      {hiddenChildren.length > 0 && (
         <div className="relative">
           <Button
             onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -225,12 +229,12 @@ export function CardAction({ className, children, ...props }: CardActionProps) {
             <Plus />
           </Button>
           {dropdownOpen && (
-            <div className="absolute right-0 mt-2 bg-white border rounded shadow-lg z-10 flex flex-col gap-2 p-2">
+            <div className="absolute right-0 mt-2 bg-white border rounded shadow-lg z-10 flex flex-col gap-2 p-2 ">
               {hiddenChildren}
             </div>
           )}
         </div>
-      )} */}
+      )}
     </div>
   );
 }
