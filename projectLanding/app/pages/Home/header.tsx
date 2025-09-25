@@ -27,21 +27,35 @@ export default function Header() {
                 </CardAction>
             </CardHeader>
             <CardContent className="flex flex-col mt-15">
-                <div className="flex flex-col gap-2">
-                    <CardTitle className="items-start" >Contrato Windel</CardTitle>
-                    <p>
-                        A clean, fast, and lightweight portfolio template built with Next.js, Vercel, and Tailwind CSS.
-                        Nextfolio has everything you need for a portfolio: MDX blog, SEO, RSS, Atom & JSON feeds, analytics, Tweet & YouTube embeds, KaTeX and more.
-                        Nextfolio is open-source and fully customizable, making it easy to add more features.
-                        Deploy your Nextfolio site with Vercel in minutes and follow the set up instructions in the Getting Started post.
-                        Built and maintained by Sirius.
-                    </p>
-                </div>
-                <div>
-                    <Avatar>
-                        <AvatarImage src="/images/avatarDeveloper.svg" alt="Avatar User" />
-                        <AvatarFallback>Icon</AvatarFallback>
-                    </Avatar>
+                <div className="flex flex-col gap-5">
+                    <CardTitle className="items-start">Contrato Windel</CardTitle>
+                    <div className="flex gap-4 items-start">
+                        <div className="flex-1 flex flex-col gap-2">
+                            <p className="text-base leading-relaxed break-words">
+                                A clean, fast, and lightweight portfolio template built with Next.js, Vercel, and Tailwind CSS.
+                            </p>
+                            <p className="text-base leading-relaxed break-words">
+                                Nextfolio has everything you need for a portfolio: MDX blog, SEO, RSS, Atom & JSON feeds, analytics, Tweet & YouTube embeds, KaTeX and more.
+                            </p>
+                            <p className="text-base leading-relaxed break-words">
+                                Nextfolio is open-source and fully customizable, making it easy to add more features.
+                            </p>
+                        </div>
+                        <div className="flex-shrink-0">
+                            <Avatar>
+                                <AvatarImage src="/images/avatarDeveloper.svg" alt="Avatar User" />
+                                <AvatarFallback>Icon</AvatarFallback>
+                            </Avatar>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <p className="text-base leading-relaxed break-words">
+                            Deploy your Nextfolio site with Vercel in minutes and follow the set up instructions in the Getting Started post.
+                        </p>
+                        <p className="text-base leading-relaxed break-words">
+                            Built and maintained by Sirius.
+                        </p>
+                    </div>
                 </div>
             </CardContent>
         </CardPadrao>
