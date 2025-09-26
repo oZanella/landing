@@ -18,46 +18,52 @@ export default function Header() {
                         Blog
                     </Button>
                     <Button>
-                        Project
+                        Projeto
                     </Button>
                     <Button>
-                        Photos
+                        Fotos
                     </Button>
                     <ModeToggle />
                 </CardAction>
             </CardHeader>
-            <CardContent className="flex flex-col mt-15">
-                <div className="flex flex-col gap-5">
-                    <CardTitle className="items-start">Contrato Windel</CardTitle>
-                    <div className="flex gap-4 items-start">
-                        <div className="flex-1 flex flex-col gap-2">
+            <CardContent className="flex flex-col mt-10">
+                <div className="flex flex-col">
+                    <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
+                        <div className="flex-1 min-w-0 flex flex-col text-start gap-2 mb-2 md:text-left">
+                            <CardTitle className="flex flex-col items-start mb-8 md:gap-2">
+                                Modelo de portfólio!
+                            </CardTitle>
+
                             <p className="text-base leading-relaxed break-words">
-                                A clean, fast, and lightweight portfolio template built with Next.js, Vercel, and Tailwind CSS.
+                                Um modelo de portfólio limpo, rápido e leve criado com Next.js, Vercel e Tailwind CSS.
                             </p>
                             <p className="text-base leading-relaxed break-words">
-                                Nextfolio has everything you need for a portfolio: MDX blog, SEO, RSS, Atom & JSON feeds, analytics, Tweet & YouTube embeds, KaTeX and more.
+                                O Nextfolio tem tudo o que você precisa para um portfólio: blog MDX, SEO, RSS, feeds Atom e JSON, análises, incorporações de Tweets e YouTube, KaTeX e muito mais.
                             </p>
                             <p className="text-base leading-relaxed break-words">
-                                Nextfolio is open-source and fully customizable, making it easy to add more features.
+                                O Nextfolio é de código aberto e totalmente personalizável, facilitando a adição de mais recursos.
                             </p>
                         </div>
-                        <div className="flex-shrink-0">
-                            <Avatar>
+                        <div className="flex-shrink-0 mx-auto md:mx-0 md:ml-6">
+                            <Avatar className="w-40 h-40 md:w-40 md:h-40">
                                 <AvatarImage src="/images/avatarDeveloper.svg" alt="Avatar User" />
                                 <AvatarFallback>Icon</AvatarFallback>
                             </Avatar>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-2">
-                        <p className="text-base leading-relaxed break-words">
-                            Deploy your Nextfolio site with Vercel in minutes and follow the set up instructions in the Getting Started post.
-                        </p>
-                        <p className="text-base leading-relaxed break-words">
-                            Built and maintained by Sirius.
+
+                    <div className="flex flex-col text-start gap-2">
+                        <p className="leading-relaxed break-words">
+                            Implante seu site Nextfolio com o Vercel em minutos e siga as instruções de configuração na postagem Introdução.                        </p>
+                        <p className="leading-relaxed break-words">
+                            Construído e mantido pela Sirius.
                         </p>
                     </div>
                 </div>
             </CardContent>
+
+
+
         </CardPadrao>
     );
 }
