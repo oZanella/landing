@@ -37,12 +37,6 @@ export default function Header() {
                             <p className="text-base leading-relaxed break-words">
                                 Somos uma empresa desenvolvedora de softwares de gestão que desde 2001 vem crescendo e se especializando em ajudar a administrar os negócios dos nossos mais de 8 mil usuários de forma organizada e prática.
                             </p>
-                            <p className="text-base leading-relaxed break-words">
-                                Nossa gama de produtos se adapta a diferentes ramos de atividades e portes de empresa nos permitindo atender com excelência as micro, pequenas e médias empresas dos segmentos de indústria, comércio e serviços.
-                            </p>
-                            <p className="text-base leading-relaxed break-words">
-                                A otimização dos processos e tarefas diárias é realizada através de um sistema de gestão formado por módulos integrados, utilizados conforme a necessidade do cliente.
-                            </p>
                         </div>
                         <div className="flex-shrink-0 mx-auto md:mx-0 md:ml-6">
                             <Avatar className="w-40 h-40 md:w-40 md:h-40">
@@ -51,6 +45,12 @@ export default function Header() {
                             </Avatar>
                         </div>
                     </div>
+                    <p className="text-base leading-relaxed break-words">
+                        Nossa gama de produtos se adapta a diferentes ramos de atividades e portes de empresa nos permitindo atender com excelência as micro, pequenas e médias empresas dos segmentos de indústria, comércio e serviços.
+                    </p>
+                    <p className="text-base leading-relaxed break-words">
+                        A otimização dos processos e tarefas diárias é realizada através de um sistema de gestão formado por módulos integrados, utilizados conforme a necessidade do cliente.
+                    </p>
                     <div className="flex flex-col text-start gap-2">
                         <p className="leading-relaxed break-words">
                             Desde sua abertura, a empresa vem aumentando sua equipe, que conta hoje com 13 unidades de negócios e mais de 100 profissionais atualizados constantemente na velocidade exigida pelo mercado, proporcionando a seus clientes, produtos e serviços com excelência e confiabilidade.                      </p>
