@@ -10,18 +10,16 @@ export default function Page() {
     return (
         <CardPadrao>
             <CardHeader>
-                <div className="w-full flex flex-col">
+                <div className="w-full flex md:flex-col ">
                     <CardTitle>
-                        <a
-                            href="/"
-                        >
+                        <a href="/">
                             Windel Sistemas LTDA
                         </a>
                     </CardTitle>
                 </div>
                 <CardAction>
                     <Link href="/pageBlog">
-                        <Button>Blog</Button>
+                        <Button >Blog</Button>
                     </Link>
                     <Link href="/pageProjeto">
                         <Button>
@@ -36,7 +34,7 @@ export default function Page() {
                     <ModeToggle />
                 </CardAction>
             </CardHeader>
-            <CardContent className="flex flex-col mt-10">
+            <CardContent className="flex flex-col md:mt-10">
                 <div className="flex flex-col gap-5">
                     <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
                         <div className="flex-1 min-w-0 flex flex-col text-start gap-2 mb-2 md:text-left">

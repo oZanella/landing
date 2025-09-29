@@ -146,7 +146,7 @@ export const CardHeader = React.forwardRef<HTMLDivElement, CardHeaderProps>(
       <div
         ref={ref}
         className={cn(
-          'flex flex-row items-center justify-center lg:flex-row',
+          'flex flex-col md:items-center md:justify-center md:flex-row',
           paddingClasses[padding], className
         )}
         {...props}
@@ -213,7 +213,7 @@ export function CardAction({ className, children, ...props }: CardActionProps) {
     <div
       data-slot="card-action"
       className={cn(
-        'flex flex-row gap-1 mt-0 items-center',
+        'flex flex-row md:items-center',
         className ?? ''
       )}
       {...props}

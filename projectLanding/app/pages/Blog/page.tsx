@@ -13,9 +13,7 @@ export default function PageBlog() {
             <CardHeader>
                 <div className="w-full flex flex-col">
                     <CardTitle>
-                        <a
-                            href="/"
-                        >
+                        <a href="/">
                             Windel Sistemas LTDA
                         </a>
                     </CardTitle>
@@ -37,8 +35,8 @@ export default function PageBlog() {
                     <ModeToggle />
                 </CardAction>
             </CardHeader>
-            <CardContent className="flex flex-row mt-10 p-1 items-center justify-center">
-                <div className="flex flex-row gap-4">
+            <CardContent className="flex flex-row mt-10 p-2 items-center justify-center">
+                <div className="flex flex-col gap-4 md:flex-row">
                     <CardMiniPadrao className="flex flex-row gap-2">
                         <CardHeader>
                             <div className="flex flex-row justify-center items-center">
