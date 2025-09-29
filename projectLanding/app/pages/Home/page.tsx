@@ -12,12 +12,16 @@ export default function Page() {
             <CardHeader>
                 <div className="w-full flex flex-col">
                     <CardTitle>
-                        Windel Sistemas LTDA
+                        <a
+                            href="/"
+                        >
+                            Windel Sistemas LTDA
+                        </a>
                     </CardTitle>
                 </div>
                 <CardAction>
-                    <Link href="/pageSobre">
-                        <Button>Sobre</Button>
+                    <Link href="/pageBlog">
+                        <Button>Blog</Button>
                     </Link>
                     <Link href="/pageProjeto">
                         <Button>
