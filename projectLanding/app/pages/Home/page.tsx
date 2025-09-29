@@ -3,9 +3,10 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui-padrao/avat
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/themes-toggle";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import Link from "next/link";
 
 
-export default function Header() {
+export default function Page() {
     return (
         <CardPadrao>
             <CardHeader>
@@ -15,20 +16,24 @@ export default function Header() {
                     </CardTitle>
                 </div>
                 <CardAction>
-                    <Button>
-                        Blog
-                    </Button>
-                    <Button>
-                        Projeto
-                    </Button>
-                    <Button>
-                        Fotos
-                    </Button>
+                    <Link href="/pageSobre">
+                        <Button>Sobre</Button>
+                    </Link>
+                    <Link href="/pageProjeto">
+                        <Button>
+                            Projeto
+                        </Button>
+                    </Link>
+                    <Link href="/pageFotos">
+                        <Button>
+                            Fotos
+                        </Button>
+                    </Link>
                     <ModeToggle />
                 </CardAction>
             </CardHeader>
             <CardContent className="flex flex-col mt-10">
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-5">
                     <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
                         <div className="flex-1 min-w-0 flex flex-col text-start gap-2 mb-2 md:text-left">
                             <CardTitle className="flex flex-col items-start mb-8 md:gap-2">
@@ -38,9 +43,9 @@ export default function Header() {
                                 Somos uma empresa desenvolvedora de softwares de gestão que desde 2001 vem crescendo e se especializando em ajudar a administrar os negócios dos nossos mais de 8 mil usuários de forma organizada e prática.
                             </p>
                         </div>
-                        <div className="flex-shrink-0 mx-auto md:mx-0 md:ml-6">
-                            <Avatar className="w-40 h-40 md:w-40 md:h-40">
-                                <AvatarImage src="/images/avatarDeveloper.svg" alt="Avatar User" />
+                        <div className="flex-shrink-0 md:mx-0 md:ml-6">
+                            <Avatar className="w-40 h-40">
+                                <AvatarImage src="/images/logoW.svg" alt="Avatar User" />
                                 <AvatarFallback>Icon</AvatarFallback>
                             </Avatar>
                         </div>
@@ -76,7 +81,6 @@ export default function Header() {
                     </div>
                 </div>
             </CardFooter>
-
-        </CardPadrao>
+        </CardPadrao >
     );
 }

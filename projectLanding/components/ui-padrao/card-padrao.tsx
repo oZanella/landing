@@ -100,7 +100,7 @@ export const CardPadrao = React.forwardRef<HTMLDivElement, CardProps>(({
   onClick,
   ...props
 }, ref) => {
-  const baseClasses = 'border transition-all duration-200';
+  const baseClasses = 'border dark:border-none transition-all duration-200';
   const variantClasses = cardVariants.variant[variant];
   const sizeClasses = cardVariants.size[size];
   const paddingClasses = cardVariants.padding[padding];

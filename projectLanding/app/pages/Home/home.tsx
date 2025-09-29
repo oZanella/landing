@@ -1,14 +1,10 @@
 import PageContainer from "../page-container/page-container";
-import Body from "./body";
-import Footer from "./footer";
-import Header from "./header";
+import Page from "./page";
 
 export default function HomePage() {
     return (
         <PageContainer>
-            <Header />
-            <Body />
-            <Footer />
+            <Page />
         </PageContainer>
     );
 }
