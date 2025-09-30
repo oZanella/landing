@@ -87,7 +87,7 @@ type CardFooterProps = HTMLAttributes<HTMLDivElement> & {
 };
 
 // ---------- Componente Card ----------
-export const CardPadrao = React.forwardRef<HTMLDivElement, CardProps>(({
+export const CardPadrao = React.forwardRef<HTMLDivElement, CardProps>(function CardPadrao({
   className = '',
   variant = 'default',
   size = 'default',
@@ -99,7 +99,7 @@ export const CardPadrao = React.forwardRef<HTMLDivElement, CardProps>(({
   children,
   onClick,
   ...props
-}, ref) => {
+}, ref) {
   const baseClasses = 'border dark:border-gray-300 transition-all duration-200';
   const variantClasses = cardVariants.variant[variant];
   const sizeClasses = cardVariants.size[size];
@@ -122,7 +122,7 @@ export const CardPadrao = React.forwardRef<HTMLDivElement, CardProps>(({
         hoverClasses,
         clickableClasses,
         className,
-        "bg-white text-black dark:bg-neutral-900 dark:text-white  "
+        "bg-white text-black dark:bg-neutral-900 dark:text-white fixed inset-10 md:m-10 md:flex md:flex-col md:max-h-[calc(100vh-3rem)] md:max-w-[calc(50vw-3rem)] md:overflow-hidden"
       )}
       onClick={onClick}
       {...props}
@@ -133,69 +133,75 @@ export const CardPadrao = React.forwardRef<HTMLDivElement, CardProps>(({
 });
 
 // ---------- Subcomponentes ----------
-export const CardHeader = React.forwardRef<HTMLDivElement, CardHeaderProps>(
-  ({ className = '', padding = 'default', children, ...props }, ref) => {
-    const paddingClasses = {
-      none: '',
-      sm: 'p-4 pb-2',
-      default: 'p-4',
-      lg: 'p-8 pb-4'
-    };
+export const CardHeader = React.forwardRef<HTMLDivElement, CardHeaderProps>(function CardHeader(
+  { className = '', padding = 'default', children, ...props },
+  ref
+) {
+  const paddingClasses = {
+    none: '',
+    sm: 'p-4 pb-2',
+    default: 'p-4',
+    lg: 'p-8 pb-4'
+  };
 
-    return (
-      <div
-        ref={ref}
-        className={cn(
-          'flex flex-col md:items-center md:justify-center md:flex-row',
-          paddingClasses[padding], className
-        )}
-        {...props}
-      >
-        {children}
-      </div>
-    );
-  }
+  return (
+    <div
+      ref={ref}
+      className={cn(
+        'flex flex-col md:items-center md:justify-center md:flex-row',
+        paddingClasses[padding], className
+      )}
+      {...props}
+    >
+      {children}
+    </div>
+  );
+}
 );
 
-export const CardTitle = React.forwardRef<HTMLElement, CardTitleProps>(
-  ({ className = '', size = 'default', children, as: Component = 'h3', ...props }, ref) => {
-    const sizeClasses = {
-      sm: 'text-lg font-medium',
-      default: 'text-xl font-semibold',
-      lg: 'text-2xl font-bold',
-      xl: 'text-3xl font-bold'
-    };
+export const CardTitle = React.forwardRef<HTMLElement, CardTitleProps>(function CardTitle(
+  { className = '', size = 'default', children, as: Component = 'h3', ...props },
+  ref
+) {
+  const sizeClasses = {
+    sm: 'text-lg font-medium',
+    default: 'text-xl font-semibold',
+    lg: 'text-2xl font-bold',
+    xl: 'text-3xl font-bold'
+  };
 
-    return (
-      <Component
-        ref={ref}
-        className={cn('leading-none tracking-tight flex items-center', sizeClasses[size], className)}
-        {...props}
-      >
-        {children}
-      </Component>
-    );
-  }
+  return (
+    <Component
+      ref={ref}
+      className={cn('leading-none tracking-tight flex items-center', sizeClasses[size], className)}
+      {...props}
+    >
+      {children}
+    </Component>
+  );
+}
 );
 
-export const CardDescription = React.forwardRef<HTMLParagraphElement, CardDescriptionProps>(
-  ({ className = '', size = 'default', children, ...props }, ref) => {
-    const sizeClasses = {
-      sm: 'text-xs',
-      default: 'text-sm',
-      lg: 'text-base'
-    };
+export const CardDescription = React.forwardRef<HTMLParagraphElement, CardDescriptionProps>(function CardDescription(
+  { className = '', size = 'default', children, ...props },
+  ref
+) {
+  const sizeClasses = {
+    sm: 'text-xs',
+    default: 'text-sm',
+    lg: 'text-base'
+  };
 
-    return (
-      <p
-        ref={ref}
-        className={cn('text-gray-600 dark:text-gray-300', sizeClasses[size], className)}
-        {...props}
-      >
-        {children}
-      </p>
-    );
-  }
+  return (
+    <p
+      ref={ref}
+      className={cn('text-gray-600 dark:text-gray-300', sizeClasses[size], className)}
+      {...props}
+    >
+      {children}
+    </p>
+  );
+}
 );
 
 interface CardActionProps extends React.ComponentProps<"div"> {
@@ -239,52 +245,56 @@ export function CardAction({ className, children, ...props }: CardActionProps) {
   );
 }
 
-export const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(
-  ({ className = '', padding = 'default', children, ...props }, ref) => {
-    const paddingClasses = {
-      none: '',
-      sm: 'p-4 pt-0',
-      default: 'p-4 pt-0',
-      lg: 'p-8 pt-0'
-    };
+export const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(function CardContent(
+  { className = '', padding = 'default', children, ...props },
+  ref
+) {
+  const paddingClasses = {
+    none: '',
+    sm: 'p-4 pt-0',
+    default: 'p-4 pt-0',
+    lg: 'p-8 pt-0'
+  };
 
-    return (
-      <div
-        ref={ref}
-        className={cn('flex flex-row justify-between', paddingClasses[padding], className)}
-        {...props}
-      >
-        {children}
-      </div>
-    );
-  }
+  return (
+    <div
+      ref={ref}
+      className={cn('flex flex-row justify-between', paddingClasses[padding], className)}
+      {...props}
+    >
+      {children}
+    </div>
+  );
+}
 );
 
-export const CardFooter = React.forwardRef<HTMLDivElement, CardFooterProps>(
-  ({ className = '', padding = 'default', justify = 'start', children, ...props }, ref) => {
-    const paddingClasses = {
-      none: '',
-      sm: 'p-4 pt-0',
-      default: 'p-6 pt-0',
-      lg: 'p-8 pt-0'
-    };
+export const CardFooter = React.forwardRef<HTMLDivElement, CardFooterProps>(function CardFooter(
+  { className = '', padding = 'default', justify = 'start', children, ...props },
+  ref
+) {
+  const paddingClasses = {
+    none: '',
+    sm: 'p-4 pt-0',
+    default: 'p-6 pt-0',
+    lg: 'p-8 pt-0'
+  };
 
-    const justifyClasses = {
-      start: 'justify-start',
-      center: 'justify-center',
-      end: 'justify-end',
-      between: 'justify-between',
-      around: 'justify-around'
-    };
+  const justifyClasses = {
+    start: 'justify-start',
+    center: 'justify-center',
+    end: 'justify-end',
+    between: 'justify-between',
+    around: 'justify-around'
+  };
 
-    return (
-      <div
-        ref={ref}
-        className={cn('flex items-center', paddingClasses[padding], justifyClasses[justify], className)}
-        {...props}
-      >
-        {children}
-      </div>
-    );
-  }
+  return (
+    <div
+      ref={ref}
+      className={cn('flex items-center', paddingClasses[padding], justifyClasses[justify], className)}
+      {...props}
+    >
+      {children}
+    </div>
+  );
+}
 );

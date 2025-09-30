@@ -11,9 +11,9 @@ export default function Page() {
             <CardHeader>
                 <div className="w-full flex md:flex-col ">
                     <CardTitle>
-                        <a href="/">
+                        <Link href="/">
                             Windel Sistemas LTDA
-                        </a>
+                        </Link>
                     </CardTitle>
                 </div>
                 <CardAction>
@@ -42,7 +42,6 @@ export default function Page() {
                             </CardTitle>
                         </div>
                     </div>
-
                     <Accordion type="single" collapsible className="w-full" defaultValue="item-1">
                         <AccordionItem value="item-1">
                             <AccordionTrigger>3 Sinais de Que Sua Empresa Precisa de um Sistema de Gestão</AccordionTrigger>
@@ -68,8 +67,6 @@ export default function Page() {
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
-
-
                 </div>
             </CardContent>
             <CardFooter>

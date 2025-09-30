@@ -1,4 +1,4 @@
-import { CardPadrao, CardHeader, CardDescription, CardTitle, CardFooter, CardAction, CardContent } from "@/components/ui-padrao/card-padrao";
+import { CardPadrao, CardHeader, CardTitle, CardFooter, CardAction, CardContent } from "@/components/ui-padrao/card-padrao";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui-padrao/avatar-padrao"
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/themes-toggle";
@@ -12,9 +12,9 @@ export default function Page() {
             <CardHeader>
                 <div className="w-full flex md:flex-col ">
                     <CardTitle>
-                        <a href="/">
+                        <Link href="/">
                             Windel Sistemas LTDA
-                        </a>
+                        </Link>
                     </CardTitle>
                 </div>
                 <CardAction>
@@ -71,15 +71,15 @@ export default function Page() {
                 <div className="flex flex-row justify-between items-center w-full mt-6 text-sm text-[#1C1C1C] dark:text-[#D4D4D4]">
                     <p>© 2025 Windel Web</p>
                     <div className="flex gap-4 text-[#1C1C1C] dark:text-[#D4D4D4]">
-                        <a href="https://www.instagram.com/windelsistemas/#" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://www.instagram.com/windelsistemas/#" target="_blank" rel="noopener noreferrer">
                             <Instagram className="cursor-pointer hover:scale-110 transition" />
-                        </a>
-                        <a href="https://www.facebook.com/windelsistemas" target="_blank" rel="noopener noreferrer">
+                        </Link>
+                        <Link href="https://www.facebook.com/windelsistemas" target="_blank" rel="noopener noreferrer">
                             <Facebook className="cursor-pointer hover:scale-110 transition" />
-                        </a>
-                        <a href="https://www.linkedin.com/company/windel-sistemas/" target="_blank" rel="noopener noreferrer">
+                        </Link>
+                        <Link href="https://www.linkedin.com/company/windel-sistemas/" target="_blank" rel="noopener noreferrer">
                             <Linkedin className="cursor-pointer hover:scale-110 transition" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </CardFooter>
