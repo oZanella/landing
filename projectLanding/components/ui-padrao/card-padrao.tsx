@@ -122,7 +122,7 @@ export const CardPadrao = React.forwardRef<HTMLDivElement, CardProps>(function C
         hoverClasses,
         clickableClasses,
         className,
-        "bg-white text-black dark:bg-neutral-900 dark:text-white ",
+        "bg-white text-black dark:bg-neutral-900 dark:text-white flex flex-col justify-end items-end",
         "min-h-[calc(80vh-2rem)] mb-8"
       )}
       onClick={onClick}
@@ -149,7 +149,7 @@ export const CardHeader = React.forwardRef<HTMLDivElement, CardHeaderProps>(func
     <div
       ref={ref}
       className={cn(
-        'flex flex-col md:items-center md:justify-center md:flex-row',
+        'flex flex-col md:items-center md:justify-center md:flex-row w-full',
         paddingClasses[padding], className
       )}
       {...props}
@@ -260,7 +260,7 @@ export const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(fu
   return (
     <div
       ref={ref}
-      className={cn('flex flex-row justify-between', paddingClasses[padding], className)}
+      className={cn('flex justify-between flex-col md:mt-10 h-full', paddingClasses[padding], className)}
       {...props}
     >
       {children}
@@ -291,7 +291,7 @@ export const CardFooter = React.forwardRef<HTMLDivElement, CardFooterProps>(func
   return (
     <div
       ref={ref}
-      className={cn('flex items-center', paddingClasses[padding], justifyClasses[justify], className)}
+      className={cn('flex items-center w-full', paddingClasses[padding], justifyClasses[justify], className)}
       {...props}
     >
       {children}
