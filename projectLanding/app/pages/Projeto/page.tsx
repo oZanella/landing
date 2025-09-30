@@ -7,7 +7,7 @@ import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 
 
-export default function PageHome() {
+export default function PageProjeto() {
     return (
         <CardPadrao>
             <CardHeader>
@@ -40,33 +40,21 @@ export default function PageHome() {
                     <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
                         <div className="flex-1 min-w-0 flex flex-col text-start gap-3 mb-2 md:text-left">
                             <CardTitle className="flex flex-col items-start mb-0 md:gap-2">
-                                Conheça a nossa história da Windel
+                                Quem é o autor do projeto?
                             </CardTitle>
                             <Separator className="my-4" />
                             <p className="text-base leading-relaxed break-words">
-                                Somos uma empresa desenvolvedora de softwares de gestão que desde 2001 vem crescendo e se especializando em ajudar a administrar os negócios dos nossos mais de 8 mil usuários de forma organizada e prática.
+                                Biografia do autor
                             </p>
                         </div>
                         <div className="flex-shrink-0 md:mx-0 md:ml-6">
-                            <Avatar className="w-40 h-40">
-                                <AvatarImage src="/images/logoW.svg" alt="Avatar User" />
+                            <Avatar className="w-40 h-40 mb-10 border-1 border-transparent dark:border-white rounded-full md:mb-0">
+                                <AvatarImage src="/images/fotoPerfil.png" alt="Avatar User" />
                                 <AvatarFallback>Icon</AvatarFallback>
                             </Avatar>
                         </div>
                     </div>
-                    <p className="text-base leading-relaxed break-words">
-                        Nossa gama de produtos se adapta a diferentes ramos de atividades e portes de empresa nos permitindo atender com excelência as micro, pequenas e médias empresas dos segmentos de indústria, comércio e serviços.
-                    </p>
-                    <p className="text-base leading-relaxed break-words">
-                        A otimização dos processos e tarefas diárias é realizada através de um sistema de gestão formado por módulos integrados, utilizados conforme a necessidade do cliente.
-                    </p>
-                    <div className="flex flex-col text-start gap-2">
-                        <p className="leading-relaxed break-words">
-                            Desde sua abertura, a empresa vem aumentando sua equipe, que conta hoje com 13 unidades de negócios e mais de 100 profissionais atualizados constantemente na velocidade exigida pelo mercado, proporcionando a seus clientes, produtos e serviços com excelência e confiabilidade.                      </p>
-                        <p className="leading-relaxed break-words">
-                            Juntos somos mais fortes.
-                        </p>
-                    </div>
+
                 </div>
             </CardContent>
             <CardFooter>

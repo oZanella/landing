@@ -1,5 +1,10 @@
-export default function PageProjeto() {
+import PageContainer from "../pages/page-container/page-container";
+import PageProjeto from "../pages/Projeto/page";
+
+export default function PageBlogComponent() {
     return (
-        <h1>PageOne - Projeto</h1>
+        <PageContainer>
+            <PageProjeto />
+        </PageContainer>
     )
 }

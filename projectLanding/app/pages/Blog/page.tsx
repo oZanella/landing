@@ -4,9 +4,8 @@ import { ModeToggle } from "@/components/ui/themes-toggle";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Separator } from "@/components/ui/separator";
 
-export default function Page() {
+export default function PageBlog() {
     return (
         <CardPadrao className="h-60 flex flex-col justify-end items-end">
             <CardHeader className="w-full">
