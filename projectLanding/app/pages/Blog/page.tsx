@@ -66,6 +66,62 @@ export default function Page() {
                                 </p>
                             </AccordionContent>
                         </AccordionItem>
+                        <AccordionItem value="item-4">
+                            <AccordionTrigger>Adeus, Cupom Fiscal em Papel! NFC-e em Santa Catarina é Obrigatória. Prepare-se!</AccordionTrigger>
+                            <AccordionContent className="flex flex-col gap-4 text-balance">
+                                <p>Santa Catarina, 15 de junho de 2025 – O varejo catarinense se prepara para uma mudança significativa em 2025: a substituição definitiva do tradicional Emissor de Cupom Fiscal (ECF) e do Programa Aplicativo Fiscal (PAF-ECF) pela moderna Nota Fiscal de Consumidor Eletrônica (NFC-e), modelo 65. A medida, que visa modernizar a comunicação entre o contribuinte e o Fisco, trará mais agilidade, segurança e economia para os estabelecimentos comerciais.
+                                    A nova regra, estabelecida pelo Ato DIAT nº 56/2024, determina um cronograma de adesão obrigatória que se estende ao longo do próximo ano. Para os consumidores, a principal mudança será a possibilidade de receber e consultar suas notas fiscais de forma eletrônica, diretamente no portal da Secretaria de Estado da Fazenda (SEF/SC), utilizando a chave de acesso ou o QR Code impresso no Documento Auxiliar da NFC-e (DANFE-NFC-e).
+                                </p>
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-5">
+                            <AccordionTrigger>Adeus, Cupom Fiscal em Papel! NFC-e em Santa Catarina é Obrigatória. Prepare-se!</AccordionTrigger>
+                            <AccordionContent className="flex flex-col gap-4 text-balance">
+                                <p>Santa Catarina, 15 de junho de 2025 – O varejo catarinense se prepara para uma mudança significativa em 2025: a substituição definitiva do tradicional Emissor de Cupom Fiscal (ECF) e do Programa Aplicativo Fiscal (PAF-ECF) pela moderna Nota Fiscal de Consumidor Eletrônica (NFC-e), modelo 65. A medida, que visa modernizar a comunicação entre o contribuinte e o Fisco, trará mais agilidade, segurança e economia para os estabelecimentos comerciais.
+                                    A nova regra, estabelecida pelo Ato DIAT nº 56/2024, determina um cronograma de adesão obrigatória que se estende ao longo do próximo ano. Para os consumidores, a principal mudança será a possibilidade de receber e consultar suas notas fiscais de forma eletrônica, diretamente no portal da Secretaria de Estado da Fazenda (SEF/SC), utilizando a chave de acesso ou o QR Code impresso no Documento Auxiliar da NFC-e (DANFE-NFC-e).
+                                </p>
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-6">
+                            <AccordionTrigger>Adeus, Cupom Fiscal em Papel! NFC-e em Santa Catarina é Obrigatória. Prepare-se!</AccordionTrigger>
+                            <AccordionContent className="flex flex-col gap-4 text-balance">
+                                <p>Santa Catarina, 15 de junho de 2025 – O varejo catarinense se prepara para uma mudança significativa em 2025: a substituição definitiva do tradicional Emissor de Cupom Fiscal (ECF) e do Programa Aplicativo Fiscal (PAF-ECF) pela moderna Nota Fiscal de Consumidor Eletrônica (NFC-e), modelo 65. A medida, que visa modernizar a comunicação entre o contribuinte e o Fisco, trará mais agilidade, segurança e economia para os estabelecimentos comerciais.
+                                    A nova regra, estabelecida pelo Ato DIAT nº 56/2024, determina um cronograma de adesão obrigatória que se estende ao longo do próximo ano. Para os consumidores, a principal mudança será a possibilidade de receber e consultar suas notas fiscais de forma eletrônica, diretamente no portal da Secretaria de Estado da Fazenda (SEF/SC), utilizando a chave de acesso ou o QR Code impresso no Documento Auxiliar da NFC-e (DANFE-NFC-e).
+                                </p>
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-7">
+                            <AccordionTrigger>Adeus, Cupom Fiscal em Papel! NFC-e em Santa Catarina é Obrigatória. Prepare-se!</AccordionTrigger>
+                            <AccordionContent className="flex flex-col gap-4 text-balance">
+                                <p>Santa Catarina, 15 de junho de 2025 – O varejo catarinense se prepara para uma mudança significativa em 2025: a substituição definitiva do tradicional Emissor de Cupom Fiscal (ECF) e do Programa Aplicativo Fiscal (PAF-ECF) pela moderna Nota Fiscal de Consumidor Eletrônica (NFC-e), modelo 65. A medida, que visa modernizar a comunicação entre o contribuinte e o Fisco, trará mais agilidade, segurança e economia para os estabelecimentos comerciais.
+                                    A nova regra, estabelecida pelo Ato DIAT nº 56/2024, determina um cronograma de adesão obrigatória que se estende ao longo do próximo ano. Para os consumidores, a principal mudança será a possibilidade de receber e consultar suas notas fiscais de forma eletrônica, diretamente no portal da Secretaria de Estado da Fazenda (SEF/SC), utilizando a chave de acesso ou o QR Code impresso no Documento Auxiliar da NFC-e (DANFE-NFC-e).
+                                </p>
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-8">
+                            <AccordionTrigger>Adeus, Cupom Fiscal em Papel! NFC-e em Santa Catarina é Obrigatória. Prepare-se!</AccordionTrigger>
+                            <AccordionContent className="flex flex-col gap-4 text-balance">
+                                <p>Santa Catarina, 15 de junho de 2025 – O varejo catarinense se prepara para uma mudança significativa em 2025: a substituição definitiva do tradicional Emissor de Cupom Fiscal (ECF) e do Programa Aplicativo Fiscal (PAF-ECF) pela moderna Nota Fiscal de Consumidor Eletrônica (NFC-e), modelo 65. A medida, que visa modernizar a comunicação entre o contribuinte e o Fisco, trará mais agilidade, segurança e economia para os estabelecimentos comerciais.
+                                    A nova regra, estabelecida pelo Ato DIAT nº 56/2024, determina um cronograma de adesão obrigatória que se estende ao longo do próximo ano. Para os consumidores, a principal mudança será a possibilidade de receber e consultar suas notas fiscais de forma eletrônica, diretamente no portal da Secretaria de Estado da Fazenda (SEF/SC), utilizando a chave de acesso ou o QR Code impresso no Documento Auxiliar da NFC-e (DANFE-NFC-e).
+                                </p>
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-9">
+                            <AccordionTrigger>Adeus, Cupom Fiscal em Papel! NFC-e em Santa Catarina é Obrigatória. Prepare-se!</AccordionTrigger>
+                            <AccordionContent className="flex flex-col gap-4 text-balance">
+                                <p>Santa Catarina, 15 de junho de 2025 – O varejo catarinense se prepara para uma mudança significativa em 2025: a substituição definitiva do tradicional Emissor de Cupom Fiscal (ECF) e do Programa Aplicativo Fiscal (PAF-ECF) pela moderna Nota Fiscal de Consumidor Eletrônica (NFC-e), modelo 65. A medida, que visa modernizar a comunicação entre o contribuinte e o Fisco, trará mais agilidade, segurança e economia para os estabelecimentos comerciais.
+                                    A nova regra, estabelecida pelo Ato DIAT nº 56/2024, determina um cronograma de adesão obrigatória que se estende ao longo do próximo ano. Para os consumidores, a principal mudança será a possibilidade de receber e consultar suas notas fiscais de forma eletrônica, diretamente no portal da Secretaria de Estado da Fazenda (SEF/SC), utilizando a chave de acesso ou o QR Code impresso no Documento Auxiliar da NFC-e (DANFE-NFC-e).
+                                </p>
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-10">
+                            <AccordionTrigger>Adeus, Cupom Fiscal em Papel! NFC-e em Santa Catarina é Obrigatória. Prepare-se!</AccordionTrigger>
+                            <AccordionContent className="flex flex-col gap-4 text-balance">
+                                <p>Santa Catarina, 15 de junho de 2025 – O varejo catarinense se prepara para uma mudança significativa em 2025: a substituição definitiva do tradicional Emissor de Cupom Fiscal (ECF) e do Programa Aplicativo Fiscal (PAF-ECF) pela moderna Nota Fiscal de Consumidor Eletrônica (NFC-e), modelo 65. A medida, que visa modernizar a comunicação entre o contribuinte e o Fisco, trará mais agilidade, segurança e economia para os estabelecimentos comerciais.
+                                    A nova regra, estabelecida pelo Ato DIAT nº 56/2024, determina um cronograma de adesão obrigatória que se estende ao longo do próximo ano. Para os consumidores, a principal mudança será a possibilidade de receber e consultar suas notas fiscais de forma eletrônica, diretamente no portal da Secretaria de Estado da Fazenda (SEF/SC), utilizando a chave de acesso ou o QR Code impresso no Documento Auxiliar da NFC-e (DANFE-NFC-e).
+                                </p>
+                            </AccordionContent>
+                        </AccordionItem>
                     </Accordion>
                 </div>
             </CardContent>

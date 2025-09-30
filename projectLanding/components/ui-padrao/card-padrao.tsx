@@ -43,6 +43,7 @@ const cardVariants = {
 // ---------- Types ----------
 type CardProps = HTMLAttributes<HTMLDivElement> & {
   className?: string;
+  maxHeight?: string;
   variant?: keyof typeof cardVariants.variant;
   size?: keyof typeof cardVariants.size;
   padding?: keyof typeof cardVariants.padding;
@@ -122,8 +123,7 @@ export const CardPadrao = React.forwardRef<HTMLDivElement, CardProps>(function C
         hoverClasses,
         clickableClasses,
         className,
-        "bg-white text-black dark:bg-neutral-900 dark:text-white flex flex-col justify-end items-end",
-        "min-h-[calc(80vh-2rem)] mb-8"
+        "bg-white text-black dark:bg-neutral-900 dark:text-white flex flex-col border rounded shadow w-full h-full m-6 md:h-[90vh] ",
       )}
       onClick={onClick}
       {...props}
@@ -260,7 +260,7 @@ export const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(fu
   return (
     <div
       ref={ref}
-      className={cn('flex justify-between flex-col md:mt-10 h-full', paddingClasses[padding], className)}
+      className={cn('flex justify-between flex-col md:mt-10 h-full flex-1 overflow-auto mt-2 mb-2', paddingClasses[padding], className)}
       {...props}
     >
       {children}
