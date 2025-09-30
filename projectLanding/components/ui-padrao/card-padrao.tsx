@@ -122,7 +122,8 @@ export const CardPadrao = React.forwardRef<HTMLDivElement, CardProps>(function C
         hoverClasses,
         clickableClasses,
         className,
-        "bg-white text-black dark:bg-neutral-900 dark:text-white "
+        "bg-white text-black dark:bg-neutral-900 dark:text-white ",
+        "min-h-[calc(80vh-2rem)] mb-8"
       )}
       onClick={onClick}
       {...props}
