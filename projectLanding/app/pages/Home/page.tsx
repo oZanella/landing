@@ -8,8 +8,8 @@ import Link from "next/link";
 
 export default function Page() {
     return (
-        <CardPadrao className="h-60 flex flex-col justify-end items-end">
-            <CardHeader className="w-full">
+        <CardPadrao>
+            <CardHeader>
                 <div className="w-full flex md:flex-col ">
                     <CardTitle>
                         <Link href="/">
@@ -34,10 +34,10 @@ export default function Page() {
                     <ModeToggle />
                 </CardAction>
             </CardHeader>
-            <CardContent className="flex flex-col md:mt-10 h-full">
+            <CardContent>
                 <div className="flex flex-col gap-5">
                     <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
-                        <div className="flex-1 min-w-0 flex flex-col text-start gap-2 mb-2 md:text-left">
+                        <div className="flex-1 min-w-0 flex flex-col text-start gap-5 mb-2 md:text-left">
                             <CardTitle className="flex flex-col items-start mb-8 md:gap-2">
                                 Modelo de portfólio!
                             </CardTitle>
@@ -67,7 +67,7 @@ export default function Page() {
                     </div>
                 </div>
             </CardContent>
-            <CardFooter className="w-full ">
+            <CardFooter>
                 <div className="flex flex-row justify-between items-center w-full mt-6 text-sm text-[#1C1C1C] dark:text-[#D4D4D4]">
                     <p>© 2025 Windel Web</p>
                     <div className="flex gap-4 text-[#1C1C1C] dark:text-[#D4D4D4]">
