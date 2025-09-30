@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/themes-toggle";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
 
 
 export default function Page() {
@@ -37,10 +38,11 @@ export default function Page() {
             <CardContent>
                 <div className="flex flex-col gap-5">
                     <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
-                        <div className="flex-1 min-w-0 flex flex-col text-start gap-5 mb-2 md:text-left">
-                            <CardTitle className="flex flex-col items-start mb-8 md:gap-2">
-                                A nossa história
+                        <div className="flex-1 min-w-0 flex flex-col text-start gap-3 mb-2 md:text-left">
+                            <CardTitle className="flex flex-col items-start mb-0 md:gap-2">
+                                Conheça a nossa história da Windel
                             </CardTitle>
+                            <Separator className="my-4" />
                             <p className="text-base leading-relaxed break-words">
                                 Somos uma empresa desenvolvedora de softwares de gestão que desde 2001 vem crescendo e se especializando em ajudar a administrar os negócios dos nossos mais de 8 mil usuários de forma organizada e prática.
                             </p>
