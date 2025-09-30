@@ -100,7 +100,7 @@ export const CardPadrao = React.forwardRef<HTMLDivElement, CardProps>(({
   onClick,
   ...props
 }, ref) => {
-  const baseClasses = 'border dark:border-none transition-all duration-200';
+  const baseClasses = 'border dark:border-gray-300 transition-all duration-200';
   const variantClasses = cardVariants.variant[variant];
   const sizeClasses = cardVariants.size[size];
   const paddingClasses = cardVariants.padding[padding];
@@ -122,7 +122,7 @@ export const CardPadrao = React.forwardRef<HTMLDivElement, CardProps>(({
         hoverClasses,
         clickableClasses,
         className,
-        "bg-white text-black dark:bg-neutral-900 dark:text-white "
+        "bg-white text-black dark:bg-neutral-900 dark:text-white  "
       )}
       onClick={onClick}
       {...props}
@@ -213,7 +213,7 @@ export function CardAction({ className, children, ...props }: CardActionProps) {
     <div
       data-slot="card-action"
       className={cn(
-        'flex flex-row md:items-center',
+        'flex flex-row mt-2 md:mt-0 md:items-center md:gap-4',
         className ?? ''
       )}
       {...props}
