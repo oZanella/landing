@@ -10,7 +10,7 @@ export default function Page() {
     return (
         <CardPadrao>
             <CardHeader>
-                <div className="w-full flex md:flex-col ">
+                <div className="flex flex-col w-full items-center justify-center md:flex-row md:items-start md:justify-between">
                     <CardTitle>
                         <Link href="/">
                             Windel Sistemas LTDA
@@ -39,7 +39,7 @@ export default function Page() {
                     <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
                         <div className="flex-1 min-w-0 flex flex-col text-start gap-5 mb-2 md:text-left">
                             <CardTitle className="flex flex-col items-start mb-8 md:gap-2">
-                                Modelo de portfólio!
+                                A nossa história
                             </CardTitle>
                             <p className="text-base leading-relaxed break-words">
                                 Somos uma empresa desenvolvedora de softwares de gestão que desde 2001 vem crescendo e se especializando em ajudar a administrar os negócios dos nossos mais de 8 mil usuários de forma organizada e prática.
@@ -68,7 +68,7 @@ export default function Page() {
                 </div>
             </CardContent>
             <CardFooter>
-                <div className="flex flex-row justify-between items-center w-full mt-6 text-sm text-[#1C1C1C] dark:text-[#D4D4D4]">
+                <div className="flex flex-row justify-between items-center w-full mt-6 text-sm text-[#1C1C1C] dark:text-[#D4D4D4] ">
                     <p>© 2025 Windel Web</p>
                     <div className="flex gap-4 text-[#1C1C1C] dark:text-[#D4D4D4]">
                         <Link href="https://www.instagram.com/windelsistemas/#" target="_blank" rel="noopener noreferrer">

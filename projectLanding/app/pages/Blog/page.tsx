@@ -9,7 +9,7 @@ export default function Page() {
     return (
         <CardPadrao className="h-60 flex flex-col justify-end items-end">
             <CardHeader className="w-full">
-                <div className="w-full flex md:flex-col ">
+                <div className="flex flex-col w-full items-center justify-center md:flex-row md:items-start md:justify-between">
                     <CardTitle>
                         <Link href="/">
                             Windel Sistemas LTDA

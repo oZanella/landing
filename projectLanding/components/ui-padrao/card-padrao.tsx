@@ -149,7 +149,7 @@ export const CardHeader = React.forwardRef<HTMLDivElement, CardHeaderProps>(func
     <div
       ref={ref}
       className={cn(
-        'flex flex-col md:items-center md:justify-center md:flex-row w-full',
+        'flex flex-col w-full items-center justify-center md:flex-row ',
         paddingClasses[padding], className
       )}
       {...props}
