@@ -22,9 +22,9 @@ export default function PageHome() {
                     <Link href="/pageBlog">
                         <Button >Blog</Button>
                     </Link>
-                    <Link href="/pageProjeto">
+                    <Link href="/pageIndicacao">
                         <Button>
-                            Projeto
+                            Indicação Premiada
                         </Button>
                     </Link>
                     <Link href="/pageFotos">

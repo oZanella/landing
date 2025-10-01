@@ -7,7 +7,7 @@ import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 
 
-export default function PageProjeto() {
+export default function PageIndicacao() {
     return (
         <CardPadrao>
             <CardHeader>
@@ -22,9 +22,9 @@ export default function PageProjeto() {
                     <Link href="/pageBlog">
                         <Button >Blog</Button>
                     </Link>
-                    <Link href="/pageProjeto">
+                    <Link href="/pageIndicacao">
                         <Button>
-                            Projeto
+                            Indicação Premiada
                         </Button>
                     </Link>
                     <Link href="/pageFotos">
@@ -40,23 +40,22 @@ export default function PageProjeto() {
                     <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
                         <div className="flex-1 min-w-0 flex flex-col text-start gap-3 mb-2 md:text-left">
                             <CardTitle className="flex flex-col items-start mb-0 md:gap-2">
-                                Quem é o autor do projeto?
+                                Seja um Parceiro Windel
                             </CardTitle>
                             <Separator className="my-4" />
                             <p className="text-base leading-relaxed break-words">
-                                Biografia do autor
+                                Gostamos de parcerias onde todos ganham e crescem! Foi pensando nisto que criamos 3 modalidades onde nosso parceiro, além de ajudar seus clientes a alancar os resultados através do uso de um sistema de gestão.
                             </p>
                         </div>
-                        <div className="flex-shrink-0 md:mx-0 md:ml-6">
-                            <Avatar className="w-40 h-40 mb-10 border-1 border-transparent dark:border-white rounded-full md:mb-0">
-                                <AvatarImage src="/images/fotoPerfil.png" alt="Avatar User" />
-                                <AvatarFallback>Icon</AvatarFallback>
-                            </Avatar>
-                        </div>
                     </div>
-
                 </div>
             </CardContent>
+            <div className="">
+                <Avatar className="w-full h-40 mb-10 rounded-none">
+                    <AvatarImage src="/images/imgIndicacao.png" alt="Avatar User" />
+                    <AvatarFallback>Icon</AvatarFallback>
+                </Avatar>
+            </div>
             <CardFooter>
                 <div className="flex flex-row justify-between items-center w-full mt-6 text-sm text-[#1C1C1C] dark:text-[#D4D4D4] ">
                     <p>© 2025 Windel Web</p>
