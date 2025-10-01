@@ -1,41 +1,43 @@
+'use client'
+
 import { CardPadrao, CardHeader, CardTitle, CardFooter, CardAction, CardContent } from "@/components/ui-padrao/card-padrao";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui-padrao/avatar-padrao"
-import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/themes-toggle";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useState } from "react";
+import PageIndicacao from "../Indicacao/page";
+import { Button } from "@/components/ui/button";
+import PageBlog from "../Blog/page";
 
 
 export default function PageHome() {
+
+    const [tab, setTab] = useState<'pagehome' | 'pageblog' | 'pageindicacao' | 'pagefotos'>('pagehome')
+
     return (
         <CardPadrao>
             <CardHeader>
                 <div className="flex flex-col w-full items-center justify-center md:flex-row md:items-start md:justify-between">
                     <CardTitle>
-                        <Link href="/">
+                        <Button variant="ghost" onClick={() => setTab('pagehome')}>
                             Windel Sistemas LTDA
-                        </Link>
+                        </Button>
                     </CardTitle>
                 </div>
-                <CardAction>
-                    <Link href="/pageBlog">
-                        <Button >Blog</Button>
-                    </Link>
-                    <Link href="/pageIndicacao">
-                        <Button>
-                            Indicação Premiada
-                        </Button>
-                    </Link>
-                    <Link href="/pageFotos">
-                        <Button>
-                            Fotos
-                        </Button>
-                    </Link>
-                    <ModeToggle />
-                </CardAction>
+                <Tabs defaultValue="account">
+                    <TabsList>
+                        <TabsTrigger onClick={() => setTab('pageblog')} value={"pageblog"}>Blog</TabsTrigger>
+                        <TabsTrigger onClick={() => setTab('pageindicacao')} value={"pageindicacao"}>Indicação Premiada</TabsTrigger>
+                        <TabsTrigger onClick={() => setTab('pagefotos')} value={"pagefotos"}>Fotos</TabsTrigger>
+                        <ModeToggle />
+                    </TabsList>
+                </Tabs>
             </CardHeader>
-            <CardContent>
+
+            {tab === 'pagehome' && <CardContent >
                 <div className="flex flex-col gap-5">
                     <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
                         <div className="flex-1 min-w-0 flex flex-col text-start gap-3 mb-2 md:text-left">
@@ -68,7 +70,12 @@ export default function PageHome() {
                         </p>
                     </div>
                 </div>
-            </CardContent>
+            </CardContent>}
+
+            {tab === 'pageindicacao' && <PageIndicacao />}
+
+            {tab === 'pageblog' && <PageBlog />}
+
             <CardFooter>
                 <div className="flex flex-row justify-between items-center w-full mt-6 text-sm text-[#1C1C1C] dark:text-[#D4D4D4] ">
                     <p>© 2025 Windel Web</p>
