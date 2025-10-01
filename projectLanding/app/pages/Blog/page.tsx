@@ -42,7 +42,7 @@ export default function PageBlog() {
                             </CardTitle>
                         </div>
                     </div>
-                    <Accordion type="single" collapsible className="w-full" defaultValue="item-1">
+                    <Accordion type="single" collapsible className="w-full">
                         <AccordionItem value="item-1">
                             <AccordionTrigger>3 Sinais de Que Sua Empresa Precisa de um Sistema de Gestão</AccordionTrigger>
                             <AccordionContent className="flex flex-col gap-4 text-balance">
