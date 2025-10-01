@@ -51,7 +51,7 @@ export default function PageIndicacao() {
                 </div>
             </CardContent>
             <div className="">
-                <Avatar className="w-full h-40 rounded-none">
+                <Avatar className="w-full h-40 rounded-2xl p-1">
                     <AvatarImage src="/images/imgIndicacao.png" alt="Avatar User" />
                     <AvatarFallback>Icon</AvatarFallback>
                 </Avatar>
