@@ -39,7 +39,7 @@ export default function PageHome() {
                 <div className="flex flex-col gap-5">
                     <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
                         <div className="flex-1 min-w-0 flex flex-col text-start gap-3 mb-2 md:text-left">
-                            <CardTitle className="flex flex-col items-start mb-0 md:gap-2">
+                            <CardTitle className="flex flex-col md:items-start mb-0 justify-center items-center md:gap-2">
                                 Conheça a nossa história da Windel
                             </CardTitle>
                             <Separator className="my-4" />
@@ -63,7 +63,7 @@ export default function PageHome() {
                     <div className="flex flex-col text-start gap-2">
                         <p className="leading-relaxed break-words">
                             Desde sua abertura, a empresa vem aumentando sua equipe, que conta hoje com 13 unidades de negócios e mais de 100 profissionais atualizados constantemente na velocidade exigida pelo mercado, proporcionando a seus clientes, produtos e serviços com excelência e confiabilidade.                      </p>
-                        <p className="leading-relaxed break-words">
+                        <p className="leading-relaxed break-words font-bold">
                             Juntos somos mais fortes.
                         </p>
                     </div>
