@@ -39,7 +39,7 @@ export default function PageIndicacao() {
                 <div className="flex flex-col gap-5">
                     <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
                         <div className="flex-1 min-w-0 flex flex-col text-start gap-3 mb-2 md:text-left">
-                            <CardTitle className="flex flex-col items-start mb-0 md:gap-2">
+                            <CardTitle className="flex flex-col md:items-start mb-0 justify-center items-center md:gap-2">
                                 Seja um Parceiro Windel
                             </CardTitle>
                             <Separator className="my-4" />
@@ -51,7 +51,7 @@ export default function PageIndicacao() {
                 </div>
             </CardContent>
             <div className="">
-                <Avatar className="w-full h-40 mb-5 rounded-none">
+                <Avatar className="w-full h-40 rounded-none">
                     <AvatarImage src="/images/imgIndicacao.png" alt="Avatar User" />
                     <AvatarFallback>Icon</AvatarFallback>
                 </Avatar>
