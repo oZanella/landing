@@ -83,6 +83,42 @@ export default function PageBlog() {
                             <Link href={"https://www.windel.com.br/noticia/imposto-de-renda-2024-fique-por-dentro"}>A Receita Federal anunciou as novas regras e facilidades para a Declaração do Imposto de Renda de Pessoa Física (IRPF) de 2024, referente ao ano-base 2023.</Link>
                         </AccordionContent>
                     </AccordionItem>
+                    <AccordionItem value="item-11">
+                        <AccordionTrigger>Sefaz RS define multa para quem não tiver integração de NF e meios de pagamento eletrônico!</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance">
+                            <Link href={"https://www.windel.com.br/noticia/sefaz-rs-define-multa-para-quem-nao-tiver-integracao-de-nf-e-meios-de-pagamento-eletronico"}>Trouxemos as principais informações divulgadas para você e estamos prontos para te atender!</Link>
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-12">
+                        <AccordionTrigger>TEF: O que é, como funciona, quem está obrigado, onde adquirir</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance">
+                            <Link href={"https://www.windel.com.br/noticia/tef-o-que-e-como-funciona-quem-esta-obrigado-onde-adquirir"}>A opção de pagar compras com cartão de débito ou crédito, em vez do dinheiro físico, está tomando conta do mercado.</Link>
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-13">
+                        <AccordionTrigger>Seja um parceiro Windel!</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance">
+                            <Link href={"https://www.windel.com.br/noticia/seja-um-parceiro-windel"}>A Tecnologia é um segmento que cresce muito, mas ninguém cresce sozinho não é mesmo? </Link>
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-14">
+                        <AccordionTrigger>Receita Federal define novas regras para o imposto de renda 2023</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance">
+                            <Link href={"https://www.windel.com.br/noticia/receita-federal-define-novas-regras-para-o-imposto-de-renda-2023"}>Prazo de envio das declarações vai de 15 de março a 31 de maio Começa, no dia 15 de março, o período para o envio da Declaração de Imposto de Renda Pessoa Física (DIRPF)</Link>
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-15">
+                        <AccordionTrigger>Atenção para o prazo para o decreto 56.670!</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance">
+                            <Link href={"https://www.windel.com.br/noticia/atencao-para-o-prazo-para-o-decreto-56670"}>Contador(a), O Decreto 56.670 (IN 81/2022 e IN 101/2022) estabelecem novas normas relativas a vinculação do comprovante de pagamento eletrônico com a NFC-e, bem como dá prazos...</Link>
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-16">
+                        <AccordionTrigger>Parceria Windel x Contador</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance">
+                            <Link href={"https://www.windel.com.br/noticia/parceria-windel-x-contador"}>Tem coisa melhor do que você AJUDAR aquele seu cliente que precisa se organizar e ainda GANHAR DINHEIRO com isso? ISSO MESMO! GANHAR DINHEIRO. </Link>
+                        </AccordionContent>
+                    </AccordionItem>
                 </Accordion>
             </div>
         </CardContent>
