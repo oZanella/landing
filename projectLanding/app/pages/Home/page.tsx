@@ -1,21 +1,22 @@
 'use client'
 
-import { CardPadrao, CardHeader, CardTitle, CardFooter, CardAction, CardContent } from "@/components/ui-padrao/card-padrao";
+import { CardPadrao, CardHeader, CardTitle, CardFooter, CardContent } from "@/components/ui-padrao/card-padrao";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui-padrao/avatar-padrao"
 import { ModeToggle } from "@/components/ui/themes-toggle";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
 import PageIndicacao from "../Indicacao/page";
 import { Button } from "@/components/ui/button";
 import PageBlog from "../Blog/page";
+import PageSobre from "@/app/pages/Sobre/page";
 
 
 export default function PageHome() {
 
-    const [tab, setTab] = useState<'pagehome' | 'pageblog' | 'pageindicacao' | 'pagefotos'>('pagehome')
+    const [tab, setTab] = useState<'pagehome' | 'pageblog' | 'pageindicacao' | 'pagesobre'>('pagehome')
 
     return (
         <CardPadrao>
@@ -31,7 +32,7 @@ export default function PageHome() {
                     <TabsList>
                         <TabsTrigger onClick={() => setTab('pageblog')} value={"pageblog"}>Blog</TabsTrigger>
                         <TabsTrigger onClick={() => setTab('pageindicacao')} value={"pageindicacao"}>Indicação Premiada</TabsTrigger>
-                        <TabsTrigger onClick={() => setTab('pagefotos')} value={"pagefotos"}>Fotos</TabsTrigger>
+                        <TabsTrigger onClick={() => setTab('pagesobre')} value={"pagesobre"}>Sobre</TabsTrigger>
                         <ModeToggle />
                     </TabsList>
                 </Tabs>
@@ -75,6 +76,8 @@ export default function PageHome() {
             {tab === 'pageindicacao' && <PageIndicacao />}
 
             {tab === 'pageblog' && <PageBlog />}
+
+            {tab === 'pagesobre' && <PageSobre />}
 
             <CardFooter>
                 <div className="flex flex-row justify-between items-center w-full mt-6 text-sm text-[#1C1C1C] dark:text-[#D4D4D4] ">
