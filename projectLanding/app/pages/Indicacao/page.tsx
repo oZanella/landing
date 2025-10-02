@@ -61,7 +61,7 @@ export default function PageIndicacao() {
                 <div>
                     <Avatar className="w-full h-20 md:h-35 rounded-2xl">
                         <AvatarImage src="/images/imgIndicacao.png" alt="Avatar User" />
-                        <AvatarFallback>Icon</AvatarFallback>
+                        <AvatarFallback></AvatarFallback>
                     </Avatar>
                 </div>
             </div>

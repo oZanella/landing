@@ -53,7 +53,7 @@ export default function PageHome() {
                         <div className="flex-shrink-0 md:mx-0 md:ml-6">
                             <Avatar className="w-40 h-40">
                                 <AvatarImage src="/images/logoW.svg" alt="Avatar User" />
-                                <AvatarFallback>Icon</AvatarFallback>
+                                <AvatarFallback></AvatarFallback>
                             </Avatar>
                         </div>
                     </div>
