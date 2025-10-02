@@ -59,7 +59,7 @@ export default function PageIndicacao() {
                     Nosso sistema foi desenvolvido para oferecer uma gestão integrada que simplifica seu dia a dia, independentemente do tamanho da sua empresa ou da empresa do seu cliente. Venha fazer parte deste time de parceiros e tenha benefícios exclusivos.
                 </p>
                 <div>
-                    <Avatar className="w-full h-40 rounded-2xl p-1">
+                    <Avatar className="w-full h-20 md:h-35 rounded-2xl">
                         <AvatarImage src="/images/imgIndicacao.png" alt="Avatar User" />
                         <AvatarFallback>Icon</AvatarFallback>
                     </Avatar>
