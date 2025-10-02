@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export default function PageBlog() {
     return (
         <CardContent className="flex flex-col md:mt-10 h-full">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 md:max-h-[65vh] md:overflow-auto scrollbar-thin">
                 <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
                     <div className="flex-1 min-w-0 flex flex-col text-start gap-2 md:text-left">
                         <CardTitle className="flex flex-col items-start mb-8 md:gap-2">
@@ -77,12 +77,12 @@ export default function PageBlog() {
                             <Link href={"https://www.windel.com.br/noticia/atencao-contribuinte-a-fazenda-define-prazo-para-adesao-a-nfc-e-em-sc"}>Em 23 de setembro de 2024 a Sefaz SC divulgou o ATO DIAT Nº 056/2024 onde os estabelecimentos usuários de Equipamento Emissor de Cupom Fiscal (ECF) e do Programa Aplicativo Fiscal PAF-ECF ficam obrigados à emissão de Nota Fiscal de Consumidor Eletrônica (NFC-e), em substituição ao cupom fiscal emitido por ECF.</Link>
                         </AccordionContent>
                     </AccordionItem>
-                    {/* <AccordionItem value="item-10">
+                    <AccordionItem value="item-10">
                         <AccordionTrigger>Imposto de Renda 2024: Fique por dentro!</AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-4 text-balance">
                             <Link href={"https://www.windel.com.br/noticia/imposto-de-renda-2024-fique-por-dentro"}>A Receita Federal anunciou as novas regras e facilidades para a Declaração do Imposto de Renda de Pessoa Física (IRPF) de 2024, referente ao ano-base 2023.</Link>
                         </AccordionContent>
-                    </AccordionItem> */}
+                    </AccordionItem>
                 </Accordion>
             </div>
         </CardContent>

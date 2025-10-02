@@ -8,7 +8,7 @@ export default function PageIndicacao() {
     return (
 
         <CardContent className="gap-4">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 md:max-h-[65vh] md:overflow-auto scrollbar-thin">
                 <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
                     <div className="flex-1 min-w-0 flex flex-col text-start gap-3 mb-2 md:text-left">
                         <CardTitle className="flex flex-col md:items-start mb-0 justify-center items-center md:gap-2">
@@ -58,14 +58,13 @@ export default function PageIndicacao() {
                 <p className="text-base leading-relaxed break-words mt-4">
                     Nosso sistema foi desenvolvido para oferecer uma gestão integrada que simplifica seu dia a dia, independentemente do tamanho da sua empresa ou da empresa do seu cliente. Venha fazer parte deste time de parceiros e tenha benefícios exclusivos.
                 </p>
-            </div>
-            <div>
-                <Avatar className="w-full h-40 rounded-2xl p-1">
-                    <AvatarImage src="/images/imgIndicacao.png" alt="Avatar User" />
-                    <AvatarFallback>Icon</AvatarFallback>
-                </Avatar>
+                <div>
+                    <Avatar className="w-full h-40 rounded-2xl p-1">
+                        <AvatarImage src="/images/imgIndicacao.png" alt="Avatar User" />
+                        <AvatarFallback>Icon</AvatarFallback>
+                    </Avatar>
+                </div>
             </div>
         </CardContent>
-
     );
 }
