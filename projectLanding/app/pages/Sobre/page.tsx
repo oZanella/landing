@@ -30,27 +30,27 @@ export default function PageIndicacao() {
         <CardContent className="gap-4">
             <div className="flex flex-col gap-2 md:max-h-[65vh] md:overflow-auto scrollbar-thin">
                 <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
-                    <div className="flex-1 min-w-0 flex flex-col text-start gap-3 mb-2 md:text-left">
+                    <div className="flex-1 min-w-0 flex flex-col text-start gap-3 md:text-left">
                         <CardPadraoMini>
                             <CardContent>
                                 <div className="flex flex-col md:max-h-[65vh] md:overflow-auto scrollbar-thin">
-                                    <div className="flex flex-col-reverse items-center md:flex-row md:items-start">
-                                        <div className="flex-1 min-w-0 flex flex-col text-start gap-1 mb-2 md:text-left">
-                                            <CardTitle className="flex flex-col md:items-start justify-center items-center md:gap-2">
-                                                Informações sobre o Desenvolvimento
+                                    <div className="flex items-center md:flex-row md:items-start">
+                                        <div className="flex-1 flex flex-col text-start md:text-left mt-4 md:mt-0">
+                                            <CardTitle className="flex flex-col justify-center items-center md:items-start md:justify-center md:gap-2">
+                                                Arquitetura do Sistema
                                             </CardTitle>
 
                                             <Separator className="my-4" />
 
                                             <CardPadraoMini>
-                                                <div className="flex flex-row gap-2 m-2 items-center justify-between">
+                                                <div className="flex flex-col md:flex-row gap-10 md:gap-2 m-2 p-2 md:p-4 items-center justify-between">
                                                     {
                                                         tecnologiasUsadas.map((item, index) => (
                                                             <div key={index} className="flex flex-col items-center justify-center">
                                                                 <CardTitle className="flex flex-col md:items-start justify-center items-center md:gap-2">
                                                                     {item.nome}
                                                                 </CardTitle>
-                                                                <Avatar className="w-20 h-20 m-5">
+                                                                <Avatar className="w-20 h-20 mt-5">
                                                                     <AvatarImage src={item.logo} alt="NextJS" />
                                                                     <AvatarFallback></AvatarFallback>
                                                                 </Avatar>
