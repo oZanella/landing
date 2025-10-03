@@ -5,7 +5,7 @@
 ## 🔹 Descrição
 Projeto Next.js moderno com **TailwindCSS**, **Radix UI** e **Framer Motion**, voltado para desenvolvimento frontend interativo, responsivo e acessível. Ideal para interfaces dinâmicas e animações suaves.  
 
-> ⚠️ Observação: todas as informações do site [windel.com.br](https://www.windel.com.br/) foram removidas deste projeto.
+> ⚠️ Observação: todas as informações do projeto foram removidas deste site: [windel.com.br](https://www.windel.com.br/).
 
 ---
 
