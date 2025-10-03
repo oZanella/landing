@@ -39,7 +39,7 @@ export default function PageIndicacao() {
 
         <CardContent className="gap-4">
             <div className="flex flex-col gap-2 md:max-h-[65vh] md:overflow-auto scrollbar-thin">
-                <div className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start">
+                <div className="flex items-center gap-2 md:flex-row md:items-start">
                     <div className="flex-1 min-w-0 flex flex-col text-start gap-3 md:text-left">
                         <CardPadraoMini>
                             <CardContent>
