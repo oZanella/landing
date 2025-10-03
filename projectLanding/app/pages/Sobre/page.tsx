@@ -46,7 +46,7 @@ export default function PageIndicacao() {
                                 <div className="flex flex-col md:max-h-[65vh] md:overflow-auto scrollbar-thin">
                                     <div className="flex items-center md:flex-row md:items-start">
                                         <div className="flex-1 flex flex-col text-start md:text-left mt-4 md:mt-0">
-                                            <CardTitle className="flex flex-col justify-center items-center md:items-start md:justify-center md:gap-2">
+                                            <CardTitle className="flex flex-col justify-center items-center md:gap-2">
                                                 Desenvolvedor do Projeto
                                             </CardTitle>
 
@@ -80,14 +80,12 @@ export default function PageIndicacao() {
                             </CardContent>
                         </CardPadraoMini>
 
-                        <Separator className="my-4" />
-
                         <CardPadraoMini>
                             <CardContent>
                                 <div className="flex flex-col md:max-h-[65vh] md:overflow-auto scrollbar-thin">
                                     <div className="flex items-center md:flex-row md:items-start">
                                         <div className="flex-1 flex flex-col text-start md:text-left mt-4 md:mt-0">
-                                            <CardTitle className="flex flex-col justify-center items-center md:items-start md:justify-center md:gap-2">
+                                            <CardTitle className="flex flex-col justify-center items-center md:gap-2">
                                                 Arquitetura do Sistema
                                             </CardTitle>
 
