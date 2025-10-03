@@ -1,29 +1,35 @@
-import { CardTitle, CardContent } from "@/components/ui-padrao/card-padrao";
+"use client";
 
+import { CardTitle, CardContent } from "@/components/ui-padrao/card-padrao";
 import { Separator } from "@/components/ui/separator";
 import { CardPadraoMini } from "@/components/ui-padrao/card-padrao-mini";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { AvatarImage } from "@radix-ui/react-avatar";
+import { useTheme } from "next-themes";
 
 
 export default function PageIndicacao() {
 
+    const { theme } = useTheme();
+
     const tecnologiasUsadas = [
         {
             nome: 'NextJS',
-            logo: '/images/nextjs-icon.svg'
+            logoLight: '/images/nextjsThemeDark.svg',
+            logoDark: '/images/nextjsThemeLight.svg'
         },
         {
             nome: 'Tailwind CSS',
-            logo: '/images/tailwind-css.svg'
+            logoLight: '/images/tailwindThemeDark.svg',
+            logoDark: '/images/tailwindThemeLight.svg'
 
         },
         {
             nome: 'TypeScript',
-            logo: '/images/language-typescript.svg'
+            logoLight: '/images/typescriptThemeDark.svg',
+            logoDark: '/images/typescriptThemeLight.svg'
         }
     ]
-
 
     return (
 
@@ -50,8 +56,8 @@ export default function PageIndicacao() {
                                                                 <CardTitle className="flex flex-col md:items-start justify-center items-center md:gap-2">
                                                                     {item.nome}
                                                                 </CardTitle>
-                                                                <Avatar className="w-20 h-20 mt-5">
-                                                                    <AvatarImage src={item.logo} alt="NextJS" />
+                                                                <Avatar className="w-20 h-20 mt-5 ">
+                                                                    <AvatarImage src={theme === "light" ? item.logoDark : item.logoLight} alt={item.nome} />
                                                                     <AvatarFallback></AvatarFallback>
                                                                 </Avatar>
                                                             </div>
