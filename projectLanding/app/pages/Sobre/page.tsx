@@ -7,6 +7,23 @@ import { AvatarImage } from "@radix-ui/react-avatar";
 
 
 export default function PageIndicacao() {
+
+    const tecnologiasUsadas = [{
+        nome: 'NextJS',
+        logo: '/images/nextjs-icon.svg'
+    },
+    {
+        nome: 'Tailwind CSS',
+        logo: '/images/tailwind-css.svg'
+
+    },
+    {
+        nome: 'TypeScript',
+        logo: '/images/language-typescript.svg'
+    }
+    ]
+
+
     return (
 
         <CardContent className="gap-4">
@@ -26,33 +43,19 @@ export default function PageIndicacao() {
 
                                             <CardPadraoMini>
                                                 <div className="flex flex-row gap-2 m-2 items-center justify-between">
-                                                    <div className="flex flex-col items-center justify-center">
-                                                        <CardTitle className="flex flex-col md:items-start justify-center items-center md:gap-2">
-                                                            NextJS
-                                                        </CardTitle>
-                                                        <Avatar className="w-30 h-30">
-                                                            <AvatarImage src="/images/logoW.svg" alt="Avatar User" />
-                                                            <AvatarFallback></AvatarFallback>
-                                                        </Avatar>
-                                                    </div>
-                                                    <div className="flex flex-col items-center justify-center">
-                                                        <CardTitle className="flex flex-col md:items-start justify-center items-center md:gap-2">
-                                                            Tailwind CSS
-                                                        </CardTitle>
-                                                        <Avatar className="w-30 h-30">
-                                                            <AvatarImage src="/images/logoW.svg" alt="Avatar User" />
-                                                            <AvatarFallback></AvatarFallback>
-                                                        </Avatar>
-                                                    </div>
-                                                    <div className="flex flex-col items-center justify-center">
-                                                        <CardTitle className="flex flex-col md:items-start justify-center items-center md:gap-2">
-                                                            TypeScript
-                                                        </CardTitle>
-                                                        <Avatar className="w-30 h-30">
-                                                            <AvatarImage src="/images/logoW.svg" alt="Avatar User" />
-                                                            <AvatarFallback></AvatarFallback>
-                                                        </Avatar>
-                                                    </div>
+                                                    {
+                                                        tecnologiasUsadas.map((item) => (
+                                                            <div className="flex flex-col items-center justify-center">
+                                                                <CardTitle className="flex flex-col md:items-start justify-center items-center md:gap-2">
+                                                                    {item.nome}
+                                                                </CardTitle>
+                                                                <Avatar className="w-20 h-20 m-5">
+                                                                    <AvatarImage src={item.logo} alt="NextJS" />
+                                                                    <AvatarFallback></AvatarFallback>
+                                                                </Avatar>
+                                                            </div>
+                                                        ))
+                                                    }
                                                 </div>
                                             </CardPadraoMini>
 
