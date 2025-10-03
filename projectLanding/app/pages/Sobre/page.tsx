@@ -8,19 +8,20 @@ import { AvatarImage } from "@radix-ui/react-avatar";
 
 export default function PageIndicacao() {
 
-    const tecnologiasUsadas = [{
-        nome: 'NextJS',
-        logo: '/images/nextjs-icon.svg'
-    },
-    {
-        nome: 'Tailwind CSS',
-        logo: '/images/tailwind-css.svg'
+    const tecnologiasUsadas = [
+        {
+            nome: 'NextJS',
+            logo: '/images/nextjs-icon.svg'
+        },
+        {
+            nome: 'Tailwind CSS',
+            logo: '/images/tailwind-css.svg'
 
-    },
-    {
-        nome: 'TypeScript',
-        logo: '/images/language-typescript.svg'
-    }
+        },
+        {
+            nome: 'TypeScript',
+            logo: '/images/language-typescript.svg'
+        }
     ]
 
 
