@@ -45,8 +45,8 @@ export default function PageIndicacao() {
                                             <CardPadraoMini>
                                                 <div className="flex flex-row gap-2 m-2 items-center justify-between">
                                                     {
-                                                        tecnologiasUsadas.map((item) => (
-                                                            <div className="flex flex-col items-center justify-center">
+                                                        tecnologiasUsadas.map((item, index) => (
+                                                            <div key={index} className="flex flex-col items-center justify-center">
                                                                 <CardTitle className="flex flex-col md:items-start justify-center items-center md:gap-2">
                                                                     {item.nome}
                                                                 </CardTitle>
